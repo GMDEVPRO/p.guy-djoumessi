@@ -1,0 +1,118 @@
+section{
+    min-height: 100vh;
+    padding: 13rem 12% 13rem;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+    justify-content: center;
+}
+span{
+    color: $primary-tree;
+}
+.logo span{
+    color: $white-light;
+}
+.home-content h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 3.5rem;
+    color: $white-light;
+}
+.home-content h1{
+   font-size: 5rem;
+   font-weight: 600;
+   margin-top: 1.5rem;
+   line-height: 1;
+   color: $white-light;
+}
+.home-img img{
+    position: relative;
+    width: 33vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px $primary-dark;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+.home-img img:hover{
+    box-shadow: 0 0 25px $primary-normal,
+                0 0 50px $primary-normal,
+                0 0 100px $primary-normal; 
+}
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+    max-width: 1000px;
+    color: $white-light;
+}
+.social-icons a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4.5rem;
+    height: 4.5rem;
+    background: transparent;
+    border: 2px solid $primary-tree;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    color: $white-light;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+}
+.social-icons a:hover{
+   transform: scale(1.3)translateY(-5px);
+    box-shadow: 0 0 25px $primary-normal;
+}
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: $primary-normal;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: $white-light;
+    border: 2px solid $primary-tree;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 50px $primary-normal;
+}
+.btn-group:nth-of-type(2){
+    background-color: $primary-normal;
+    color: $white-light;
+    border-radius: 4rem;
+    box-shadow:  0 0 25px transparent;
+}
+
+.btn-group:nth-of-type(2):hover{
+    box-shadow: 0 0 25px $primary-normal;
+    background-color: $primary-normal;
+    color: $primary-dark;
+
+}
+
+.text-animation{
+    font-size: 34px;
+    font-weight: 600;
+    min-width: 200px;
+}
+.text-animation span{
+    position: relative;
+}
+.text-animation span::before{
+    content: "Desenvolvedor Web";
+    color: $primary-tree;
+    animation: words 20s infinite;
+}

@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
+}
+
+html{
+    font-size: 60%;
+    overflow-x: hidden
+}
+
+
+@import "partials/color";
+@import "partials/home";
+@import "partials/sobre";
+@import "partials/projetos";
+@import "partials/contato" ;
+@import "partials/menumob";
+@import "https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css";
+
+body{
+    background:  $primary-normal ;
+    color: var($white-normal);
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 2rem 10% 2rem;
+    background: $primary-normal;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    width: 100%;
+}
+.logo{
+    font-size: 3rem;
+    color: $white-normal;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+.logo span{
+    text-shadow:  0 0 25px $primary-dark;
+}
+.navbar a{
+    font-size: 1.8rem;
+    color: $white-dark;
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    list-style: none;
+}
+.navbar a:hover,
+.navbar a.active{
+    color: $primary-dark;
+    border-bottom: 3px solid $primary-dark;
+  
+}
+menu-icon{
+    font-size: 3.6rem;
+    color: $white-dark;
+    display: none;
+}
+
+

@@ -1,0 +1,88 @@
+.contato h2{
+  margin-bottom: 3rem;
+  color: $white-light;
+}
+.contato form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 3rem auto;
+    text-align: center;
+}
+.contato form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contato form .input-box input,
+.contato form textarea{
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.8rem;
+    color: $white-dark;
+    background: #0b2e63a4;
+    border-radius: 2rem;
+    border: 2px solid $primary-tree;
+    resize: none;
+}
+.contato form .btn{
+    margin-top: 2rem;
+}
+/* FOOTER */
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    background-color: $primary-light;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: $white-light;
+}
+.footer .social a {
+    font-size: 25px;
+    color: $white-normal;
+    border: 2px solid $primary-tree;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    background-color: $primary-normal;
+    box-shadow: $primary-tree;
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: $white-dark;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid $white-light;
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 3px;
+}
+.footer .copyright{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    color: $white-light;
+}
