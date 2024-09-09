@@ -1,17 +1,17 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    border: none;
-    outline: none;
-    scroll-behavior: smooth;
-    font-family: "poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "poppins", sans-serif;  
 }
 
 html{
-    font-size: 60%;
-    overflow-x: hidden
+  font-size: 60%;
+  overflow-x: hidden
 }
 
 
@@ -24,54 +24,90 @@ html{
 @import "https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css";
 
 body{
-    background:  $primary-normal ;
-    color: var($white-normal);
+  background:  $primary-normal ;
+  color: var($white-normal);
 }
 .header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    padding: 2rem 10% 2rem;
-    background: $primary-normal;
-    backdrop-filter: blur(10px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2rem 10% 2rem;
+  background: $primary-normal;
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  width: 100%;
 }
 .logo{
-    font-size: 3rem;
-    color: $white-normal;
-    font-weight: 800;
-    cursor: pointer;
-    transition: 0.2s ease;
+  font-size: 3rem;
+  color: $white-normal;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
 }
 .logo:hover{
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 .logo span{
-    text-shadow:  0 0 25px $primary-dark;
+  text-shadow:  0 0 25px $primary-dark;
 }
 .navbar a{
-    font-size: 1.8rem;
-    color: $white-dark;
-    margin-left: 4rem;
-    font-weight: 500;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
-    list-style: none;
+  font-size: 1.8rem;
+  color: $white-dark;
+  margin-left: 4rem;
+  font-weight: 500;
+  transition: 0.3s ease;
+  border-bottom: 3px solid transparent;
+  list-style: none;
 }
 .navbar a:hover,
 .navbar a.active{
-    color: $primary-dark;
-    border-bottom: 3px solid $primary-dark;
-  
+  color: $primary-dark;
+  border-bottom: 3px solid $primary-dark;
+
 }
 menu-icon{
-    font-size: 3.6rem;
-    color: $white-dark;
-    display: none;
+  font-size: 3.6rem;
+  color: $white-dark;
+  display: none;
+}
+.btn-whatsapp{
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+z-index: 99;
+
+  img{
+    max-width: 74px;
+    transition: transform 0.4s;
+  }
+
+  img:hover{
+    transform: scale(1.1);
+  }
+}
+
+.btn-whatsapp .tooltip-text{
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+
+  top: 8px;
+  left: -144%;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  background: center;
+  background-color: $black-normal;
+  color: $white-normal;
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 
 
+.btn-whatsapp:hover .tooltip-text{
+visibility: visible;
+opacity: 1;
+}

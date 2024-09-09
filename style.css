@@ -362,7 +362,7 @@ span {
   color: #fefbff;
 }
 
-@media (max-width: 1285px) {
+@media (max-width: 1285px) and (max-width: 1285px) {
   html {
     font-size: 55%;
   }
@@ -378,7 +378,7 @@ span {
     min-width: 30vw;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1285px) and (max-width: 991px) {
   header {
     padding: 2rem 3%;
   }
@@ -392,7 +392,7 @@ span {
     padding: 2rem 3%;
   }
 }
-@media (max-width: 895px) {
+@media (max-width: 1285px) and (max-width: 895px) {
   #menu-icon {
     display: block;
   }
@@ -422,7 +422,7 @@ span {
     margin: 3rem 3rem;
     gap: 2rem;
   }
-  .home-content {
+  .home-content, .sobre-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -440,9 +440,28 @@ span {
     max-width: 600px;
     margin: 0 auto;
   }
-  .home-img {
+  .home-img img {
     width: 40vw;
     margin: 2rem 0;
+  }
+  .sobre {
+    flex-direction: column-reverse;
+    margin: 3rem 3rem;
+    gap: 2rem;
+  }
+  .sobre .heading {
+    width: 50vw;
+  }
+  .projetos-box {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .projetos-box img {
+    min-width: 40rem;
+  }
+}
+@media screen and (max-width: 1285px) and (max-width: 768px) {
+  .btn-whatsapp imag {
+    max-width: 60px;
   }
 }
 body {
@@ -501,4 +520,39 @@ menu-icon {
   font-size: 3.6rem;
   color: #edeaef;
   display: none;
+}
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 14px;
+  right: 24px;
+  z-index: 99;
+}
+.btn-whatsapp img {
+  max-width: 74px;
+  transition: transform 0.4s;
+}
+.btn-whatsapp img:hover {
+  transform: scale(1.1);
+}
+
+.btn-whatsapp .tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  width: 120px;
+  top: 8px;
+  left: -144%;
+  padding: 8px;
+  border-radius: 8px;
+  text-align: center;
+  background: center;
+  background-color: #232224;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+
+.btn-whatsapp:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
 }/*# sourceMappingURL=style.css.map */
