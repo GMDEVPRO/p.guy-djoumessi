@@ -106,8 +106,34 @@ z-index: 99;
   transition: opacity 0.4s;
 }
 
-
-.btn-whatsapp:hover .tooltip-text{
-visibility: visible;
-opacity: 1;
+.tecnologias {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
 }
+
+.tecnologias span {
+    background: #007bff;
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 0.3s;
+}
+
+.tecnologias span:hover {
+    background: #646AF2;
+    transform: scale(1.05);
+}
+
+.tecnologias i,
+.tecnologias .tech-icon {
+    font-size: 16px;
+    width: 16px;
+    height: 16px;
+}
+
