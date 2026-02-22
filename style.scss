@@ -1,33 +1,4 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  border: none;
-  outline: none;
-  scroll-behavior: smooth;
-  font-family: "poppins", sans-serif;  
-}
-
-html{
-  font-size: 60%;
-  overflow-x: hidden
-}
-
-
-@import "partials/color";
-@import "partials/home";
-@import "partials/sobre";
-@import "partials/projetos";
-@import "partials/contato" ;
-@import "partials/menumob";
-@import "https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css";
-
-body{
-  background:  $primary-normal ;
-  color: var($white-normal);
-}
-.header{
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -35,105 +6,102 @@ body{
   background: $primary-normal;
   backdrop-filter: blur(10px);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Mantém espaço entre logo e language selector */
   align-items: center;
   z-index: 100;
   width: 100%;
 }
-.logo{
+
+/* Certifica que o language selector é flex */
+.sellang {
+  display: flex;
+  align-items: center; /* centraliza verticalmente */
+}
+
+
+/* Logo */
+.logo {
   font-size: 3rem;
   color: $white-normal;
   font-weight: 800;
   cursor: pointer;
   transition: 0.2s ease;
 }
-.logo:hover{
+.logo:hover {
   transform: scale(1.1);
 }
-.logo span{
-  text-shadow:  0 0 25px $primary-dark;
+.logo span {
+  text-shadow: 0 0 25px $primary-dark;
 }
-.navbar a{
+
+/* Navbar */
+.navbar {
+  display: flex;
+  gap: 4rem;
+}
+.navbar a {
   font-size: 1.8rem;
   color: $white-dark;
-  margin-left: 4rem;
   font-weight: 500;
   transition: 0.3s ease;
   border-bottom: 3px solid transparent;
-  list-style: none;
 }
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
   color: $primary-dark;
   border-bottom: 3px solid $primary-dark;
-
-}
-menu-icon{
-  font-size: 3.6rem;
-  color: $white-dark;
-  display: none;
-}
-.btn-whatsapp{
-  position: fixed;
-  bottom: 14px;
-  right: 24px;
-z-index: 99;
-
-  img{
-    max-width: 74px;
-    transition: transform 0.4s;
-  }
-
-  img:hover{
-    transform: scale(1.1);
-  }
 }
 
-.btn-whatsapp .tooltip-text{
-  visibility: hidden;
-  position: absolute;
+/* Language selector container */
+.sellang {
+  display: flex;
+  align-items: center;
+}
+
+/* Language selector */
+.language-selector {
+  position: relative;
   width: 120px;
-
-  top: 8px;
-  left: -144%;
-  padding: 8px;
-  border-radius: 8px;
-  text-align: center;
-  background: center;
-  background-color: $black-normal;
-  color: $white-normal;
-  opacity: 0;
-  transition: opacity 0.4s;
+  cursor: pointer;
+  font-size: 1.4rem;
 }
 
-.tecnologias {
-    margin-top: 20px;
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
+.selected {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background: #0B2E63;
+  color: #fff;
 }
 
-.tecnologias span {
-    background: #007bff;
-    color: #fff;
-    padding: 8px 14px;
-    border-radius: 20px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    transition: 0.3s;
+/* Dropdown */
+.options {
+  display: none;
+  position: absolute;
+  top: 120%; /* Fica logo abaixo do selecionado */
+  right: 0; /* Alinhado à direita */
+  width: 100%;
+  background: #0B2E63;
+  border-radius: 5px;
+  overflow: hidden;
+  flex-direction: column;
+  z-index: 10;
 }
 
-.tecnologias span:hover {
-    background: #646AF2;
-    transform: scale(1.05);
+.options div {
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.options div:hover {
+  background: #07406e;
 }
 
-.tecnologias i,
-.tecnologias .tech-icon {
-    font-size: 16px;
-    width: 16px;
-    height: 16px;
+.language-selector.active .options {
+  display: flex;
 }
-

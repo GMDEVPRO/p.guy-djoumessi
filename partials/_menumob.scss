@@ -28,6 +28,7 @@
     .footer{
         padding: 2rem 3%;
     }
+    
 }
 
 @media(max-width:895px){
@@ -57,7 +58,7 @@
     .home{
         flex-direction: column-reverse;
         margin: 3rem 3rem;
-        gap: 1.5rem;
+        gap: 1.8rem;
     }
     .home-content, .sobre-content{
         display: flex;

@@ -204,7 +204,7 @@ span {
 }
 
 .sobre-content p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 500;
   line-height: 1.8;
   max-width: 1000px;
@@ -500,7 +500,7 @@ span {
   .home {
     flex-direction: column-reverse;
     margin: 3rem 3rem;
-    gap: 1.5rem;
+    gap: 1.8rem;
   }
   .home-content, .sobre-content {
     display: flex;
@@ -661,7 +661,7 @@ menu-icon {
 }
 
 .tecnologias span:hover {
-  background: #646AF2;
+  background: #0B2E63;
   transform: scale(1.05);
 }
 
@@ -670,4 +670,46 @@ menu-icon {
   font-size: 16px;
   width: 16px;
   height: 16px;
+}
+
+.language-selector {
+  position: relative;
+  width: 120px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.selected {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  background: #0B2E63;
+  color: white;
+}
+
+.options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  background: #0B2E63;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.options div {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.options div:hover {
+  background: #0B2E63;
+}
+
+.language-selector.active .options {
+  display: block;
 }/*# sourceMappingURL=style.css.map */

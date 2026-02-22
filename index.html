@@ -29,33 +29,47 @@
         </a>
 
         <nav class="navbar">
-             <a href="#home" class="active">HOME</a>
-             <a href="#sobre">SOBRE</a>
-             <a href="#projetos">PROJETOS</a>
-             <a href="#contato">CONTATO</a>
-            
-           
+             <a href="#home" data-i18n="menuHome">HOME</a>
+             <a href="#sobre" data-i18n="menuSobre">SOBRE</a>
+             <a href="#projetos" data-i18n="menuProjetos">PROJETOS</a>
+             <a href="#contato" data-i18n="menuContato">CONTATO</a>
         </nav>
         <div class="sellang">
-            <div class="tselecao">
-              <select name="tselecao" id="#">
-                <option value="us-us">US</option>
-                <option value="fr-fr">FR</option>
-                
-              </select>
-            </div>
+    <div class="language-selector">
+        <div class="selected">
+            <span class="flag-icon flag-icon-br"></span> 
         </div>
+
+<div class="options">
+<div data-lang="pt">
+    <span class="flag-icon flag-icon-br"></span> 
+</div>
+<div data-lang="en">
+    <span class="flag-icon flag-icon-us"></span>
+</div>
+<div data-lang="fr">
+    <span class="flag-icon flag-icon-fr"></span> 
+</div>
+
+           
+    </div>
+</div>
+
+</div>
+
+</div>
        
 
     </header>
 
     <section class="home" id="home">
         <div class="home-content">
-            <h1>OLA, SOU <span>GUY.D</span></h1>
+            <h1 class="heading" data-i18n="homeTitulo">OLA, SOU <span>GUY.D</span></h1>
             <h3 class="text-animation">
                  SOU <span></span> 
             </h3>
-            <p>Tenho foco em construir interfaces modernas, responsivas e intuitivas, além de desenvolver APIs e integrações eficientes com bancos de dados prezo por código limpo.</p>
+            <p data-i18n="homeTexto">Tenho foco em construir interfaces modernas, responsivas e intuitivas, 
+                além de desenvolver APIs e integrações eficientes com bancos de dados prezo por código limpo.</p>
 
                <div class="social-icons">  
                 <a href="#">
@@ -78,12 +92,11 @@
                <a href="https://api.whatsapp.com/send?phone=5511958567231&text=Quero%20fazer%20um%20agendamento!" 
      class="btn" 
      target="_blank" 
-     rel="noopener">
+     rel="noopener" data-i18n="botaoContato">
      CONTATO
   </a>
-              
-               </div>
-        </div>
+      </div>
+    </div>
 
         <div class="home-img">
             <img src="assets/foto.jpg" alt="">
@@ -95,11 +108,11 @@
             <img src="assets/foto.jpg" alt="">
         </div>
         <div class="sobre-content">
-            <h1 class="heading">SOBRE MIM</h1>
+            <h1 class="heading" data-i18n="sobreTitulo">SOBRE MIM</h1>
             <h3 class="text-animation">
                 <span></span>
             </h3>
-            <p>Tenho facilidade para aprender novas tecnologias e me adaptar a diferentes contextos de projeto.<br>Meu objetivo é evoluir profissionalmente, contribuir ativamente para o crescimento da equipe e entregar 
+            <p data-i18n="sobreTexto">Tenho facilidade para aprender novas tecnologias e me adaptar a diferentes contextos de projeto.<br>Meu objetivo é evoluir profissionalmente, contribuir ativamente para o crescimento da equipe e entregar 
                 soluções que gerem impacto positivo para usuários e empresas.</p>
                 <div class="tecnologias">
                     <span><i class="fa-brands fa-java"></i></span>
@@ -116,20 +129,20 @@
     <!-- END SOBRE -->
     <!-- PROJETOS -->
     <section class="projetos" id="projetos">
-        <h2 class="heading">PROJETOS.</h2>
+        <h2 class="heading" data-i18n="tituloProjetos">PROJETOS.</h2>
 
          <div class="projetos-box">
             <div class="projeto-card">
-                <img src="assets/foto.jpg" alt="">
+                <img src="assets/barbeira.png" >
 
                 <h3>Projeto 1</h3>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
+                <p data-lang="sobreTexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
                    Omnis maiores possimus obcaecati libero.</p>
-                   <div class="btn">ver no <a href="#">
-                    <i class="bx bxl-github"></i>
+                   <div class="btn"><a href="c">
+                    <img src="assets/Vercel_Logo_1.png" alt="Vercel Logo" style="width:15px; height:15px;">
                 </a></div>
-                <div class="btn">projeto <a href="#">
+                <div class="btn">projeto <a href="https://vercel.com/gmdevproo/barber-landig-page">
                     <i class="bx bxl-github"></i>
                 </a></div>
             </div>
@@ -138,10 +151,10 @@
 
                 <h3>Projeto 2</h3>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
+                <p data-lang="sobreTexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
                    Omnis maiores possimus obcaecati libero.</p>
                    <div class="btn">projeto <a href="#">
-                    <i class="bx bxl-github"></i>
+                      <i class="bx bxl-vercel"></i>
                 </a></div>
                 <div class="btn">projeto <a href="#">
                     <i class="bx bxl-github"></i>
@@ -153,10 +166,10 @@
 
                 <h3>Projeto 3</h3>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
+                <p data-lang="sobreTexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
                    Omnis maiores possimus obcaecati libero.</p>
                    <div class="btn">projeto <a href="#">
-                    <i class="bx bxl-github"></i>
+                      <i class="bx bxl-vercel"></i>
                 </a></div>
                 <div class="btn">projeto <a href="#">
                     <i class="bx bxl-github"></i>
@@ -168,7 +181,7 @@
 
                 <h3>Projeto 4</h3>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
+                <p data-lang="sobreTexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
                    Omnis maiores possimus obcaecati libero.</p>
                    <div class="btn">projeto <a href="#">
                     <i class="bx bxl-github"></i>
@@ -183,7 +196,7 @@
 
                 <h3>Projeto 5</h3>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
+                <p data-lang="sobreTexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
                    Omnis maiores possimus obcaecati libero.</p>
                    <div class="btn">projeto <a href="#">
                     <i class="bx bxl-github"></i>
@@ -198,7 +211,7 @@
 
                 <h3>Projeto 6</h3>
 
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
+                <p data-lang="sobreTexto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita ipsam error impedit! 
                    Omnis maiores possimus obcaecati libero.</p>
                    <div class="btn">projeto <a href="#">
                     <i class="bx bxl-github"></i>
@@ -213,7 +226,8 @@
     <!--- END PROJETOS  -->
     <!-- CONTATO -->
     <section class="contato" id="contato">
-        <h2 class="heading">CONTATO. <span></span></h2>
+       <h2 class="heading" data-i18n="tituloContato">CONTATO.</h2>
+
 
         <form action="#">
             <div class="input-group">
@@ -255,20 +269,14 @@
         </a>
     </div>
     <ul class="list">
-        <li>
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#sobre">Sobre</a>
-        </li>
-        <li>
-            <a href="#projetos">Projetos</a>
-        </li>
-        <li>
-            <a href="#contato">Contato</a>
-        </li>
-    </ul>
-    <p class="copyright">@Desenvolivido por GMDEV </p>
+        <li><a href="#" data-i18n="menuHome">Home</a></li>
+<li><a href="#sobre" data-i18n="menuSobre">Sobre</a></li>
+<li><a href="#projetos" data-i18n="menuProjetos">Projetos</a></li>
+<li><a href="#contato" data-i18n="menuContato">Contato</a></li>
+
+<p class="copyright" data-i18n="footerTexto">
+&Desenvolvido por GMDEV
+</p>
 
     <!-- END FOOTER -->
    </footer>
@@ -283,6 +291,11 @@
         <span class="tooltip-text">Fala Comigo</span>
     </a>
 
+    
+
+
     <script src="script.js"></script>
+<script src="lang.js"></script>
+
 </body>
 </html>
